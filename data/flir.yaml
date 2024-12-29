@@ -1,0 +1,15 @@
+#train: /TBH/ir-reasoner-yolov7/Data2/train/images  # 118287 images
+#val: /TBH/ir-reasoner-yolov7/Data2/val/images  # 5000 images
+
+train: /TBH/ir-reasoner-yolov7/KAIST_data/train/images  # 118287 images
+val: /TBH/ir-reasoner-yolov7/KAIST_data/val/images  # 5000 images
+# test: ./coco/test-dev2017.txt  # 20288 of 40670 images, submit to https://competitions.codalab.org/competitions/20794
+
+# number of classes
+#nc: 2
+#nc: 5
+nc: 1
+# class names
+#names: ['person', 'bike', 'car','light','sign']
+#names: ['person', 'car']
+names: ['person']
