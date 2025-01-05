@@ -5,51 +5,51 @@
 ![Stars](https://img.shields.io/github/stars/ELF233/MS-MD-YOLO)  
 ![Issues](https://img.shields.io/github/issues/ELF233/MS-MD-YOLO)  
 
-**MS-MD-YOLO** 是一个基于 YOLO 的多尺度、多方向的目标检测模型，旨在提升目标检测的精度和效率。  
+**MS-MD-YOLO** is a multi-scale, multi-directional object detection model based on YOLO, designed to improve the accuracy and efficiency of object detection.  
 
 ---  
 
-## 📖 目录  
+## 📖 Table of Contents  
 
-1. [项目简介](#项目简介)  
-2. [功能特性](#功能特性)  
-3. [安装与使用](#安装与使用)  
-   - [环境要求](#环境要求)  
-   - [安装步骤](#安装步骤)  
-   - [数据集配置](#数据集配置)  
-   - [训练模型](#训练模型)  
-   - [测试模型](#测试模型)  
-4. [联系信息](#联系信息)  
-
----  
-
-## 项目简介  
-
-**MS-MD-YOLO** 是一种基于 YOLOv7 的多方向多尺度局部特征增强红外目标检测方法，以应对红外成像技术在不同光照和天气条件下的独特优势。  
-
-该模型的主要创新点包括：  
-- **Mamba 模块**：通过选择机制和多尺度特征分支有效捕捉不同尺度的目标细节。  
-- **S-ELAN 模块**：结合多方向扫描和深度卷积结构，增强多尺度特征提取。  
-- **局部特征增强模块**：利用膨胀卷积扩展感受野，并通过 CBAM 注意机制改善特征表示，从而提升模型对目标的语义理解。  
-
-实验结果表明，该模型在自构建的多尺度红外目标数据集上表现出色，并在 FLIR 公共数据集上优于现有最先进的方法，显示出其在红外目标检测中的有效性和强泛化能力。  
+1. [Project Overview](#project-overview)  
+2. [Features](#features)  
+3. [Installation and Usage](#installation-and-usage)  
+   - [Requirements](#requirements)  
+   - [Installation Steps](#installation-steps)  
+   - [Dataset Configuration](#dataset-configuration)  
+   - [Training the Model](#training-the-model)  
+   - [Testing the Model](#testing-the-model)  
+4. [Contact Information](#contact-information)  
 
 ---  
 
-## ✨ 功能特性  
+## Project Overview  
 
-- ✅ 支持多尺度目标检测  
-- ✅ 集成 Mamba 特征提取模块  
-- ✅ 高效的推理速度  
-- ✅ 适用多种数据集  
+**MS-MD-YOLO** is a multi-directional, multi-scale local feature enhancement infrared object detection method based on YOLOv7. It is designed to leverage the unique advantages of infrared imaging technology under various lighting and weather conditions.  
+
+The main innovations of this model include:  
+- **Mamba Module**: Effectively captures details of objects at different scales through a selection mechanism and multi-scale feature branches.  
+- **S-ELAN Module**: Enhances multi-scale feature extraction by combining multi-directional scanning and deep convolutional structures.  
+- **Local Feature Enhancement Module**: Expands the receptive field using dilated convolutions and improves feature representation through the CBAM attention mechanism, enhancing the model's semantic understanding of objects.  
+
+Experimental results show that this model performs exceptionally well on a self-constructed multi-scale infrared object dataset and outperforms state-of-the-art methods on the FLIR public dataset, demonstrating its effectiveness and strong generalization ability in infrared object detection.  
 
 ---  
 
-## 🚀 安装与使用  
+## ✨ Features  
 
-### 环境要求  
+- ✅ Supports multi-scale object detection  
+- ✅ Integrated Mamba feature extraction module  
+- ✅ High inference speed  
+- ✅ Compatible with various datasets  
 
-以下是项目所需的完整依赖包列表：  
+---  
+
+## 🚀 Installation and Usage  
+
+### Requirements  
+
+Below is the complete list of dependencies required for the project:  
 
 - absl-py==2.1.0  
 - addict==2.4.0  
@@ -180,37 +180,36 @@
 - zipp==3.20.2  
 - zope.interface==7.1.0  
 
-### 安装步骤  
+### Installation Steps  
 
-1. **克隆项目到本地**：  
+1. **Clone the repository to your local machine**:  
 
    ```bash  
    git clone https://github.com/ELF233/MS-MD-YOLO  
    cd MS-MD-YOLO
+   ### Dataset Configuration  
 
-### 数据集配置  
+1. Place your dataset in the `data` folder.  
+2. Modify the configuration files in the `data` folder to match the dataset paths in your local environment.  
 
-1. 将数据集放置在 `data` 文件夹中。  
-2. 修改 `data` 文件夹中的配置文件，调整数据集路径以匹配本地环境。  
+### Training the Model  
 
----  
-
-### 训练模型  
-
-1. 打开 `train.py` 文件，根据需求设置训练参数（如批量大小、训练轮数等）。  
-2. 运行以下命令开始训练：  
+1. Open the `train.py` file and set the training parameters (e.g., batch size, number of epochs, etc.) as needed.  
+2. Run the following command to start training:  
 
    ```bash  
    python train.py
+   
+### Testing the Model  
 
-### 测试模型  
-
-1. 打开 `test.py` 文件，根据需求设置测试参数（如模型路径、测试数据路径等）。  
-2. 运行以下命令进行测试：  
+1. Open the `test.py` file and set the testing parameters (e.g., model path, test data path, etc.) as needed.  
+2. Run the following command to start testing:  
 
    ```bash  
    python test.py
-##  📬 联系信息  
+  
+---  
+## 📬 Contact Information
 
-- **邮箱**：1499583398@qq.com  
-- **代码仓库**：[MS-MD-YOLO on GitHub](https://github.com/ELF233/MS-MD-YOLO)
+-   **Email**:  [1499583398@qq.com](mailto:1499583398@qq.com)
+-   **Repository**:  [MS-MD-YOLO on GitHub](https://github.com/ELF233/MS-MD-YOLO)
